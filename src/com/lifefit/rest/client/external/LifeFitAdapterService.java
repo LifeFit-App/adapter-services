@@ -52,13 +52,13 @@ public class LifeFitAdapterService {
 		try{
 			//get endpoint for STANDS4 Quote API
 			LifeFitSSClient lifeFitSSClient = new LifeFitSSClient();
-			endpoint = lifeFitSSClient.getAPIConfigByName("STANDS4");					
+			endpoint = lifeFitSSClient.getAPIConfigByName("STANDS4");	
 			service = client.target(getBaseURI(endpoint));
 			
 			response = service.path("").request().accept(MediaType.APPLICATION_XML).get();
 			results = response.readEntity(String.class);	
 			
-			if(results != null && results.equalsIgnoreCase("")){
+			if(results != null){
 				//Convert string into inputStream
 				stream = new ByteArrayInputStream(results.getBytes(StandardCharsets.UTF_8));
 				
