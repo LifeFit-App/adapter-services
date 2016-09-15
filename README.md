@@ -1,8 +1,5 @@
-# Lifefit App - IntroSDE Final Project
+# LifeFit Adapter Services
 
-Student Name: Rudiansen Gunawan
+This repository contains adapter services for LifeFit application. The services are deployed on the following URL https://lifefit-adapter-181499.herokuapp.com/lifefit-adapter/
 
-I worked alone.
-
-The services are deployed on Heroku on the following URL:
-https://lifefit-adapter-181499.herokuapp.com/lifefit-adapter/
+For more information regarding the list of URI available on this services, please refer to the [Wiki](https://github.com/Lifefit-IntroSDE/adapter-services/wiki) page.
